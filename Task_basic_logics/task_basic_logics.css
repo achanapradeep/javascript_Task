@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef5ff, #dfeeff, #f7fbff);
+  min-height: 100vh;
+}
+
+.topbar {
+  background: linear-gradient(135deg, #3057d5, #4a7ae7);
+  color: #fff;
+  padding: 30px 20px 20px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.box h3 {
+  margin: 0 0 15px;
+  font-size: 1.15rem;
+  color: #2a2a2a;
+}
+
+.box h3 span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #eaf1ff;
+  color: #2f5fe5;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd8f7;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a7ae7;
+  box-shadow: 0 0 0 3px rgba(74, 122, 231, 0.12);
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4a7ae7, #315ed6);
+  color: #fff;
+  font-weight: 700;
+  padding: 11px 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #3a6ed3, #2b57c8);
+}
+
+.result {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  background: #f4f8ff;
+  border-radius: 8px;
+  color: #1b2f52;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0 30px;
+  color: #4a5568;
+  font-size: 0.95rem;
+}

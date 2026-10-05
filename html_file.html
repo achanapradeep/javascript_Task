@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Practice Dashboard</title>
+  <link rel="stylesheet" href="ccs_file.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="header-content">
+      <p class="eyebrow">JavaScript Practice</p>
+      <h1>Mini Challenge Dashboard</h1>
+      <p class="subtitle">Practice core JavaScript and DOM concepts with quick calculation tasks.</p>
+      <div class="badges">
+        <span>16 Tasks</span>
+        <span>DOM</span>
+        <span>Calculator</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="box">
+      <h3><span>1</span>Average of 3 numbers</h3>
+      <input type="number" id="t1a" placeholder="Number 1">
+      <input type="number" id="t1b" placeholder="Number 2">
+      <input type="number" id="t1c" placeholder="Number 3">
+      <button onclick="Task1()">Calculate</button>
+      <p class="result" id="res1"></p>
+    </div>
+    <div class="box">
+      <h3><span>2</span>Average of 3 numbers using DOM</h3>
+      <input type="number" id="t2a" placeholder="Number 1">
+      <input type="number" id="t2b" placeholder="Number 2">
+      <input type="number" id="t2c" placeholder="Number 3">
+      <button onclick="Task2()">Calculate</button>
+      <p class="result" id="res2"></p>
+    </div>
+    <div class="box">
+      <h3><span>3</span>Sum of first n natural numbers</h3>
+      <input type="number" id="t3n" placeholder="Enter n">
+      <button onclick="Task3()">Calculate</button>
+      <p class="result" id="res3"></p>
+    </div>
+    <div class="box">
+      <h3><span>4</span>Average of first n natural numbers</h3>
+      <input type="number" id="t4n" placeholder="Enter n">
+      <button onclick="Task4()">Calculate</button>
+      <p class="result" id="res4"></p>
+    </div>
+    <div class="box">
+      <h3><span>5</span>Profit percentage</h3>
+      <input type="number" id="t5cp" placeholder="Cost price">
+      <input type="number" id="t5sp" placeholder="Selling price">
+      <button onclick="Task5()">Calculate</button>
+      <p class="result" id="res5"></p>
+    </div>
+    <div class="box">
+      <h3><span>6</span>Simple Interest</h3>
+      <input type="number" id="t6p" placeholder="Principal">
+      <input type="number" id="t6t" placeholder="Time (years)">
+      <input type="number" id="t6r" placeholder="Rate (%)">
+      <button onclick="Task6()">Calculate</button>
+      <p class="result" id="res6"></p>
+    </div>
+    <div class="box">
+      <h3><span>7</span>Missing angle of a triangle</h3>
+      <input type="number" id="t7a" placeholder="Angle 1">
+      <input type="number" id="t7b" placeholder="Angle 2">
+      <button onclick="Task7()">Calculate</button>
+      <p class="result" id="res7"></p>
+    </div>
+    <div class="box">
+      <h3><span>8</span>Last digit of a number</h3>
+      <input type="number" id="t8n" placeholder="Enter number">
+      <button onclick="Task8()">Calculate</button>
+      <p class="result" id="res8"></p>
+    </div>
+    <div class="box">
+      <h3><span>9</span>Remove last digit of a number</h3>
+      <input type="number" id="t9n" placeholder="Enter number">
+      <button onclick="Task9()">Calculate</button>
+      <p class="result" id="res9"></p>
+    </div>
+    <div class="box">
+      <h3><span>10</span>First digit of a 3-digit number</h3>
+      <input type="number" id="t10n" placeholder="Enter 3-digit number">
+      <button onclick="Task10()">Calculate</button>
+      <p class="result" id="res10"></p>
+    </div>
+    <div class="box">
+      <h3><span>11</span>First digit of a 5-digit number</h3>
+      <input type="number" id="t11n" placeholder="Enter 5-digit number">
+      <button onclick="Task11()">Calculate</button>
+      <p class="result" id="res11"></p>
+    </div>
+    <div class="box">
+      <h3><span>12</span>Celsius to Fahrenheit</h3>
+      <input type="number" id="t12c" placeholder="Celsius">
+      <button onclick="Task12()">Calculate</button>
+      <p class="result" id="res12"></p>
+    </div>
+    <div class="box">
+      <h3><span>13</span>Fahrenheit to Celsius</h3>
+      <input type="number" id="t13f" placeholder="Fahrenheit">
+      <button onclick="Task13()">Calculate</button>
+      <p class="result" id="res13"></p>
+    </div>
+    <div class="box">
+      <h3><span>14</span>Gross salary (Basic, HRA & DA)</h3>
+      <input type="number" id="t14b" placeholder="Basic salary">
+      <input type="number" id="t14h" placeholder="HRA (%)">
+      <input type="number" id="t14d" placeholder="DA (%)">
+      <button onclick="Task14()">Calculate</button>
+      <p class="result" id="res14"></p>
+    </div>
+    <div class="box">
+      <h3><span>15</span>Swap two numbers (third variable)</h3>
+      <input type="number" id="t15a" placeholder="Number 1">
+      <input type="number" id="t15b" placeholder="Number 2">
+      <button onclick="Task15()">Calculate</button>
+      <p class="result" id="res15"></p>
+    </div>
+    <div class="box">
+      <h3><span>16</span>Swap two numbers (no third variable)</h3>
+      <input type="number" id="t16a" placeholder="Number 1">
+      <input type="number" id="t16b" placeholder="Number 2">
+      <button onclick="Task16()">Calculate</button>
+      <p class="result" id="res16"></p>
+    </div>
+  </main>
+
+  <footer>Made with JavaScript • Pradeep</footer>
+  <script src="javascript_file.js"></script>
+</body>
+</html>

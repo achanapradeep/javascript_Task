@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break and Continue Practice</title>
+  <link rel="stylesheet" href="break_continue.css">
+</head>
+<body>
+  <header class="topbar">
+    <p class="eyebrow">JavaScript Practice</p>
+    <h1>Break and Continue</h1>
+    <p class="subtitle">Click a button to run each loop example and show its result.</p>
+  </header>
+
+  <main class="container">
+    <section class="intro-card">
+      <h2>Loop control examples</h2>
+      <p>Each button runs its example and displays the values below it.</p>
+    </section>
+
+    <section class="example-grid" aria-label="Break and continue examples">
+      <article class="example-card">
+        <span class="example-number">01</span>
+        <h2>Break a for loop</h2>
+        <p>Print from 0 up to, but not including, 5.</p>
+        <button type="button" data-example="forBreak">Show Result</button>
+        <pre class="result" id="result-forBreak" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">02</span>
+        <h2>Break a while loop</h2>
+        <p>Print from 1 through 3, then stop.</p>
+        <button type="button" data-example="whileBreak">Show Result</button>
+        <pre class="result" id="result-whileBreak" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">03</span>
+        <h2>Find a multiple with for</h2>
+        <p>Find the first multiple of 5 starting at 22.</p>
+        <button type="button" data-example="forMultiple">Show Result</button>
+        <pre class="result" id="result-forMultiple" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">04</span>
+        <h2>Find a multiple with while</h2>
+        <p>Find the first multiple of 5 from 22 through 30.</p>
+        <button type="button" data-example="whileMultiple">Show Result</button>
+        <pre class="result" id="result-whileMultiple" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">05</span>
+        <h2>Search backwards</h2>
+        <p>Find the first multiple of 4 while counting down from 59.</p>
+        <button type="button" data-example="backwardMultiple">Show Result</button>
+        <pre class="result" id="result-backwardMultiple" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">06</span>
+        <h2>Count three values</h2>
+        <p>Print the first three values from 10 through 20.</p>
+        <button type="button" data-example="firstThree">Show Result</button>
+        <pre class="result" id="result-firstThree" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">07</span>
+        <h2>Find two even values</h2>
+        <p>Count down from 25 and stop after printing two even numbers.</p>
+        <button type="button" data-example="twoEven">Show Result</button>
+        <pre class="result" id="result-twoEven" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">08</span>
+        <h2>Skip a value</h2>
+        <p>Print 1 through 10, skipping 5.</p>
+        <button type="button" data-example="skipFive">Show Result</button>
+        <pre class="result" id="result-skipFive" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">09</span>
+        <h2>Skip a value in a range</h2>
+        <p>Print 10 through 20, skipping 15.</p>
+        <button type="button" data-example="skipFifteen">Show Result</button>
+        <pre class="result" id="result-skipFifteen" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">10</span>
+        <h2>Skip a year</h2>
+        <p>Print 2000 through 2026, skipping 2022.</p>
+        <button type="button" data-example="skipYear">Show Result</button>
+        <pre class="result" id="result-skipYear" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">11</span>
+        <h2>Skip a year with while</h2>
+        <p>Print 2020 through 2026, skipping 2022.</p>
+        <button type="button" data-example="whileSkipYear">Show Result</button>
+        <pre class="result" id="result-whileSkipYear" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">12</span>
+        <h2>Ascending do-while</h2>
+        <p>Print values from 1 through 10.</p>
+        <button type="button" data-example="ascendingDoWhile">Show Result</button>
+        <pre class="result" id="result-ascendingDoWhile" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">13</span>
+        <h2>Descending do-while</h2>
+        <p>Print values from 10 down through 5.</p>
+        <button type="button" data-example="descendingDoWhile">Show Result</button>
+        <pre class="result" id="result-descendingDoWhile" aria-live="polite">Result: --</pre>
+      </article>
+
+      <article class="example-card">
+        <span class="example-number">14</span>
+        <h2>Even or odd</h2>
+        <p>Enter a number to check whether it is even or odd.</p>
+        <label for="userNumber">Number</label>
+        <input id="userNumber" type="number" step="1" placeholder="Enter a number">
+        <button type="button" data-example="checkEvenOdd">Check Number</button>
+        <pre class="result" id="result-checkEvenOdd" aria-live="polite">Result: --</pre>
+      </article>
+    </section>
+  </main>
+
+  <footer>JavaScript loop-control examples</footer>
+  <script src="break_continue.js"></script>
+</body>
+</html>

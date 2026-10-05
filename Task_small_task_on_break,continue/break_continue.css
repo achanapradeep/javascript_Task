@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #203047;
+  background: linear-gradient(135deg, #eef5ff, #dfeeff);
+}
+
+.topbar {
+  padding: 36px 20px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #3057d5, #4a7ae7);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: #e9efff;
+}
+
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 30px auto;
+}
+
+.intro-card,
+.example-card {
+  border: 1px solid #d7e2f2;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(35, 70, 130, 0.08);
+}
+
+.intro-card {
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+
+.intro-card h2,
+.example-card h2 {
+  margin: 0 0 10px;
+  color: #284ca8;
+}
+
+.intro-card p,
+.example-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.example-card {
+  padding: 20px;
+}
+
+.example-card button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 9px;
+  background: #315ed6;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.example-card button:hover {
+  background: #284ca8;
+}
+
+.example-card label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: 700;
+}
+
+.example-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd8f7;
+  border-radius: 9px;
+  font: inherit;
+}
+
+.example-card input:focus {
+  border-color: #4a7ae7;
+  outline: 3px solid rgba(74, 122, 231, 0.15);
+}
+
+.result {
+  min-height: 42px;
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  overflow-x: auto;
+  border-radius: 9px;
+  background: #f1f6ff;
+  color: #203047;
+  font: 0.9rem/1.5 Consolas, "Courier New", monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.example-number {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #315ed6;
+  background: #eaf1ff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+footer {
+  padding: 0 16px 28px;
+  color: #52627a;
+  text-align: center;
+}
